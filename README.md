@@ -1,22 +1,14 @@
-# hello-world-nuxt
+# docker-alpine-vuejs-nuxt
 
-> My laudable Nuxt.js project
-
-## Build Setup
-
-``` bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
+## Build setup
+Should build the image independent of your local setup
+``` sh
+$ script/build.sh
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## Run the server
+The initial dev server comes with hot reloading enabled
+
+``` sh
+$ script/server.sh
+```
