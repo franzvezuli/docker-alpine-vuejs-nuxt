@@ -9,6 +9,6 @@ services:
     container_name: nuxt_app
     restart: always
     volumes:
-      - ./:/app:rw
+      - ./src:/app/src:rw
     ports:
       - "3000:3000"
