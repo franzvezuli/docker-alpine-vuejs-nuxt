@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+  app:
+    image: nuxt
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: nuxt_app
+    restart: always
+    volumes:
+      - ./src:/app/src:rw
+    ports:
+      - "3000:3000"
